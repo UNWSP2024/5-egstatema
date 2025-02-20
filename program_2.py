@@ -1,13 +1,18 @@
-# Program #2: Math Quiz
-# Write a program that gives simple math quizzes.  The program should display two random numbers to be added, such as
+# Eliya Statema
+# 2/20/25
+# Math Quiz
 
-#     247
+variable_1 = 38
+variable_2 = 73
 
-# + 129
+print(f"{variable_1} + {variable_2} = ?")
 
-# ------
+def calculate_sum(n1, n2):
+    addition = n1 + n2
+    user_answer = int(input("Enter your answer here: "))
+    if user_answer == addition:
+        print("Congratulations! That is the correct answer.")
+    else:
+        print(f"The correct answer is {addition}.")
 
-# The program should allow the student to enter the answer.  
-# If the answer is correct, a message of congratulations should be displayed.  
-# If the answer is incorrect a message showing the correct answer should be displayed.  
-# The program must use a function that accomplishes part of the needed tasks.
+calculate_sum(variable_1, variable_2)
